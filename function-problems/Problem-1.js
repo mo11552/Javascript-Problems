@@ -21,11 +21,12 @@ var arrayOfWords = myWords.split(" ");
 
 //console.log(arrayOfWords)
 
-let longestWord = "";
+function longestWord() {
 for (let counter = 0; counter < arrayOfWords.length; counter++) {
   if(arrayOfWords[counter].length > longestWord.length) {
     longestWord = arrayOfWords[counter];
   }
+  }
+  return (longestWord);
 }
-
-console.log(longestWord);
+console.log(longestWord());
