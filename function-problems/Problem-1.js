@@ -10,23 +10,15 @@ Step 5: check which word in the array is the longest word
 Step 6: Log in the the result of the longestWord
 */
 
-function myWords(stringPassedIn) {
-  console.log(stringPassedIn)
+function getLongestWord(str) {
+	var arrayOfWords = str.split(" ");
+	var longestWord = arrayOfWords[0];
+	for (let counter = 1; counter < arrayOfWords.length; counter++) {
+		if (arrayOfWords[counter].length > longestWord.length) {
+          longestWord = arrayOfWords[counter]; 
+        }
+    }
+     return console.log(longestWord);
 }
-//myWords("this is a list of words");
 
-var myWords = "this is a list of words";
-
-var arrayOfWords = myWords.split(" ");
-
-//console.log(arrayOfWords)
-
-function longestWord() {
-for (let counter = 0; counter < arrayOfWords.length; counter++) {
-  if(arrayOfWords[counter].length > longestWord.length) {
-    longestWord = arrayOfWords[counter];
-  }
-  }
-  return (longestWord);
-}
-console.log(longestWord());
+getLongestWord("This is a list of words")
