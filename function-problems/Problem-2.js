@@ -16,12 +16,12 @@ function getNumberOfVowels(str) {
   	var numberOfVowels = 0;
   	var vowels = ["a","e","i", "o", "u"];
   	for (let counter = 0; counter < arrayOfLetters.length; counter++) {
-  		if (arrayOfLetters.includes(vowels[counter])) {
+  		if (vowels.includes(arrayOfLetters[counter])) {
   			numberOfVowels++;
   		}
   	}
 
-      return console.log(numberOfVowels);
+      return numberOfVowels;
   }
 
-getNumberOfVowels("This is a list of vowels");
+console.log(getNumberOfVowels("This is a list of vowels"));

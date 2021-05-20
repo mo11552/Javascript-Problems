@@ -18,7 +18,7 @@ function getLongestWord(str) {
           longestWord = arrayOfWords[counter]; 
         }
     }
-     return console.log(longestWord);
+     return longestWord;
 }
 
-getLongestWord("This is a list of words")
+console.log(getLongestWord("This is a list of words"));
