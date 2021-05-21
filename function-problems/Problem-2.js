@@ -19,9 +19,8 @@ function getNumberOfVowels(str) {
   		if (vowels.includes(arrayOfLetters[counter])) {
   			numberOfVowels++;
   		}
-  	}
-
-      return numberOfVowels;
-  }
+    }
+    return numberOfVowels;
+}
 
 console.log(getNumberOfVowels("This is a list of vowels"));
