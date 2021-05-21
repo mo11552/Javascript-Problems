@@ -11,11 +11,12 @@ of occurrences of the specified letter within the string.
 
 function countOfOccurrences(str, letter) {
 	var numberOfOccurrences = 0;
+  	
   	for (let counter = 0; counter < str.length; counter++) {
-     if (letter == str[counter]) {
-       	numberOfOccurrences++;
-      }
-  	}
+     	if (letter == str[counter]) {
+       		numberOfOccurrences++;
+       	}
+	}
   
     return numberOfOccurrences;
 }
