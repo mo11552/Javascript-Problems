@@ -1,5 +1,11 @@
 /*Write a JavaScript function to sort the following array of objects by 
-title value. */
+title value. 
+Step 1: make a object called listOfBooks.
+Step 2: make a function called bookTitle with 2 parameters called a and b.
+Step 3: make a variable x equal to 0.
+Step 4: make a if else if statement sorting the title's in the object.
+Step 5: return x
+*/
 
 var listOfBooks = [ 
 
@@ -11,7 +17,17 @@ var listOfBooks = [
 
    ];
 
-listOfBooks.sort((a, b) => a.title > b.title && 1 || -1)
+function bookTitle(a, b) {
+  var x = 0;
+  if (a.title > b.title) {
+    x = 1;
+  } else if (a.title < b.title) {
+    x = -1;
+  }
+  return x;
+}
+console.log(listOfBooks.sort(bookTitle));
 
-console.log(listOfBooks);
+
+
 
