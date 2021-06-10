@@ -16,6 +16,7 @@ var person = {
 };
 
 function firstPerson(obj, key) {
-    delete obj.key;
+    delete obj[key];
+    return obj
 };
 console.log(firstPerson(person, "firstName"));
