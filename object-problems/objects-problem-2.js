@@ -23,13 +23,10 @@ var people =[
     },
 ]
 
- function listOfNames(arr, key) {
-   if(1 == 1) {
-     delete people[0].age;
-     delete people[1].age;
-     delete people[2].age;
-     return people
+ function listOfNames(array, key, key2) {
+   for(i = 0; i < array.length; i++) {
+     console.log(array[i][key] + " " + array[i][key2]);
    }
- };
-console.log(listOfNames(people));
+  };
+console.log(listOfNames(people, "firstName", "lastName"));
 

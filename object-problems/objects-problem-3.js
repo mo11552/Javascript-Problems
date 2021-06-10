@@ -12,7 +12,7 @@ var person = {
 }
 
 function objectLength(obj) {
-  return Object.keys(person).length;
+  return Object.keys(obj).length;
 };
 
 console.log(objectLength(person));

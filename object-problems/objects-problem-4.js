@@ -11,6 +11,6 @@ var person = {
 }
 
 function specKey(obj, key) {
-  return person.hasOwnProperty(obj, key);
+  return obj.hasOwnProperty(key);
 }
-console.log(specKey("firstName"));
+console.log(specKey(person, "firstName"));
